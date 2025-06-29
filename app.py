@@ -7,7 +7,8 @@ import requests
 movies = pickle.load(open('artifacts/movies.pkl', 'rb'))
 similarity = pickle.load(open('artifacts/similarity.pkl', 'rb'))
 
-API_KEY = '99bc9a178d07c2a0e5f623f153ace040'
+# API_KEY = st.secrets["API_KEY"]
+API_KEY = "test"
 
 # ✅ Fetch movie details and poster from TMDB API
 def fetch_movie_details(movie_id):
