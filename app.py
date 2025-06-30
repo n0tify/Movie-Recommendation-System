@@ -123,7 +123,7 @@ selected_movie = st.selectbox('🎯 Pick a Movie You Like:', movies['title'].val
 
 # ✅ On Button Click: Show Recommendations
 if st.button('🚀 Get Recommendations'):
-    with st.spinner('Crunching numbers and loading movie magic... ✨'):
+    with st.spinner('Loading movie magic... ✨'):
         results = recommend(selected_movie)
 
         st.markdown("## 🎬 Top 5 Movie Picks for You")
